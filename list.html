@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 40px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-group button[type="reset"] {
+      color: blue;
+      padding: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      margin-left: 350px;
+    }
+
+    .button-group button[type="reset"]:hover {
+      color: red;
+    }
+
+    .button-group button[type="submit"] {
+      background-color: red;
+      color: black;
+      padding: 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: color 0.3s ease;
+    }
+
+    .button-group button[type="submit"]:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      color: black;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    .navbar h2 {
+      margin: 0;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar h2:hover {
+      background-color: #ccc;
+    }
+
+    .navbar h2.active {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><h2>Home /</h2></a>
+      <a href="login.html"><h2>Đăng Nhập</h2></a>
+      <a href="register.html"><h2>Đăng Ký</h2></a>
+    </div>
+
+    <div class="container">
+      <h2>Danh sách người dùng</h2>
+
+      <table>
+        <tr>
+          <th>STT</th>
+          <th>Tên đăng nhập</th>
+          <th>Email</th>
+          <th>Thao tác</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>User 1</td>
+          <td>user1@example.com</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>User 2</td>
+          <td>user2@example.com</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>User 3</td>
+          <td>user3@example.com</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </table>
+
+      <div class="button-group">
+        <a href="login.html"><button type="reset">Đã có tài khoản</button></a>
+        <a href="login.html"><button type="submit">Đăng nhập</button></a>
+      </div>
+    </div>
+
+    <div class="navbar">Lập trình web @2024</div>
+  </body>
+</html>
