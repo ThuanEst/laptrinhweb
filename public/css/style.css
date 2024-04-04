@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.list-item {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-item li:last-child {
+    margin-right: 0;
+}
+
+.list-item li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-checked {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.control-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.control-group input[type="text"],
+.control-group input[type="password"],
+.control-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.control-group input[type="text"]:focus,
+.control-group input[type="password"]:focus,
+.control-group input[type="email"]:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.text-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #666;
+}
+
+.group-button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.group-button a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.group-button button {
+    border: none;
+    outline: none;
+    background: rgb(53, 53, 192);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.group-button-right {
+    justify-content: flex-end;
+}
+
+.text-footer {
+    font-size: 16px;
+}
+
+.list-user {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-user h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: rgb(0, 0, 0);
+}
+
+td a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+td a:hover {
+    color: blue;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ccc;
+    margin: 0 2px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination span {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.control-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgb(60, 60, 176);
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.btn-delete {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    color: blue;
+}
+
+.form-update {
+    display: inline-block;
+}
