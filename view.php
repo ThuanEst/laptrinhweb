@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     // Truy vấn SQL để lấy thông tin của người dùng cần xem
-    $sql = "SELECT * FROM users WHERE id = :id";
+    $sql = "SELECT * FROM users WHERE user_id = :id";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
@@ -24,8 +24,8 @@ if (isset($_GET['id'])) {
 
     // Kiểm tra xem có dữ liệu người dùng hay không
     if ($user) {
-        $username = $user['username'];
-        $email = $user['email'];
+        $username = $user['user_name'];
+        $email = $user['user_email'];
     } else {
         // Xử lý trường hợp không tìm thấy người dùng
         echo "Không tìm thấy người dùng.";

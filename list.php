@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
     $id = $_POST['id'];
 
     // Xóa dữ liệu từ cơ sở dữ liệu
-    $sql = "DELETE FROM users WHERE id = :id";
+    $sql = "DELETE FROM users WHERE user_id = :id";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
@@ -105,10 +105,10 @@ if (isset($_GET['logout'])) {
                         <td><?php echo $row['username']; ?></td>
                         <td><?php echo $row['email']; ?></td>
                         <td>
-                            <a href="update.php?id=<?php echo $row['id']; ?>">Edit | </a>
-                            <a href="view.php?id=<?php echo $row['id']; ?>">View | </a>
+                            <a href="update.php?id=<?php echo $row['user_id']; ?>">Edit | </a>
+                            <a href="view.php?id=<?php echo $row['user_id']; ?>">View | </a>
                             <form class="form-update" action="" method="POST" enctype="multipart/form-data">
-                                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                <input type="hidden" name="id" value="<?php echo $row['user_id']; ?>">
                                 <button class="btn-delete" type="submit" name="delete">Delete</button>
                             </form>
                         </td>

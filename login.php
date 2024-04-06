@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             // Truy vấn để lấy thông tin về người dùng từ cơ sở dữ liệu
-            $sql = "SELECT * FROM users WHERE username = :username";
+            $sql = "SELECT * FROM users WHERE user_name = :username";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':username', $name);
             $stmt->execute();

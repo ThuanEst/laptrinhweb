@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     // Truy vấn SQL để lấy thông tin của người dùng cần cập nhật
-    $sql = "SELECT * FROM users WHERE id = :id";
+    $sql = "SELECT * FROM users WHERE user_id = :id";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
             $email = $_POST['email'];
 
             // Cập nhật dữ liệu vào cơ sở dữ liệu
-            $update_sql = "UPDATE users SET username = :username, email = :email WHERE id = :id";
+            $update_sql = "UPDATE users SET user_name = :username, user_email = :email WHERE user_id = :id";
             $update_stmt = $conn->prepare($update_sql);
             $update_stmt->bindParam(':username', $name);
             $update_stmt->bindParam(':email', $email);

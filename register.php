@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             try {
                 // Thực hiện truy vấn để chèn dữ liệu vào cơ sở dữ liệu
-                $sql = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
+                $sql = "INSERT INTO users (user_name, user_pass, user_email) VALUES (:username, :password, :email)";
                 $stmt = $conn->prepare($sql);
                 $stmt->bindParam(':username', $name);
                 $stmt->bindParam(':password', $hashed_password);

@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "kfc";
+$database = "bkc";
 
 try {
     // Tạo kết nối
